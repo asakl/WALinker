@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WALinker</string>
+    <string name="create">Create</string>
+    <string name="phone">Phone Number</string>
+    <string name="text_msg">Enter Text:</string>
+    <string name="text">message</string>
+    <string name="none"/>
+    <string name="phone_msg">Enter Phone Number:</string>
+    <string name="copy">Copy URL</string>
+</resources>

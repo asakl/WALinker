@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/StackLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <TextView
+            android:id="@+id/PhoneLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:gravity="center_horizontal"
+            android:text="@string/phone_msg"
+            android:textColor="#DA2C2C"
+            android:textSize="24sp"
+            android:visibility="visible"
+            tools:text="@string/phone_msg"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/PhoneInput"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10sp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:labelFor="@id/PhoneLabel"
+            android:text="@string/none" />
+
+        <TextView
+            android:id="@+id/TextLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:gravity="center_horizontal"
+            android:text="@string/text_msg"
+            android:textColor="#DA2C2C"
+            android:textSize="24sp"
+            android:visibility="visible"
+            tools:text="@string/text_msg"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/TextInput"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10sp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/text"
+            android:inputType="textMultiLine"
+            android:text="@string/none" />
+
+        <LinearLayout
+            android:id="@+id/ButtonsStack"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:clipChildren="false"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/CreateButton"
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="170sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10sp"
+                android:onClick="CreateButtonOnClick"
+                android:text="@string/create" />
+
+            <Button
+                android:id="@+id/CopyButton"
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="170sp"
+                android:layout_height="50sp"
+                android:onClick="CopyOnClick"
+                android:text="@string/copy" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ResText"
+            android:layout_width="300sp"
+            android:layout_height="300sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/none"
+            android:inputType="textMultiLine"
+            android:visibility="visible"
+            tools:visibility="invisible" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
